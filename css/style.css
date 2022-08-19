@@ -9,12 +9,38 @@ body {
     background-color: darkgreen;
 }
 
+header {
+    border: 2px solid blue;
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 1.3rem;
+}
+
+.search {
+    border: 2px solid aquamarine;
+    padding: 0px 0px 20px 0px;
+}
+
+.search-song {
+    border: 2px solid salmon;
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    width: 250px;
+    border-radius: 10px;
+    font-size: 1.25rem;
+}
+
+
+
 .content {
     list-style-type: none;
+    padding: 0.25rem 0rem;
 }
 
 .result {
-    padding: 0;
+    padding: 5px 0px;
+    border: 2px solid yellow;
 }
 
 .single {
@@ -22,10 +48,10 @@ body {
     flex-direction: row;
     border: 2px solid black;
     flex-wrap: nowrap;
+    padding: 0.75rem 0rem;
 }
 
 .single > h4 {
-    border: 2px solid black;
     flex-grow: 1;
     flex-shrink: 0;
 }
@@ -50,6 +76,12 @@ body {
     background-color: greenyellow;
 }
 
+.all-wrap {
+    border: 2px solid red;
+    padding: 0px 25px;
+}
+
+
 .wrapper {
     border: 2px solid red;
     display: flex;
@@ -57,16 +89,15 @@ body {
     flex-wrap: nowrap;
 }
 
-.wrapper-hidden {
-    display: none;
-}
 
 .p1, .p2, .a1, .a2, .a3 {
     border: 2px solid black;
     flex-grow: 1;
 }
 
-
+.wrapper-hidden {
+    display: none;
+}
 
 
 .p1 {
@@ -88,4 +119,3 @@ body {
 .a3 {
     flex-basis: 200px;
 }
-
