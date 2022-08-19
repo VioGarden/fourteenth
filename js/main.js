@@ -41,7 +41,7 @@ const mySongSearch = async searchText => {
                         </h4>
                     </div>
                 </div>
-                <div class="wrapper, wrapper-hidden" id="wrapper">
+                <div class="wrapper wrapper-hidden" id="wrapper">
                     <p class="p1">
                         annid: ${elem.annid}
                     </p>

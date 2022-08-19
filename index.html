@@ -5,24 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>csss</title>
 </head>
 <body>
     <header>
-        <h2>MySongList</h2>
+        <h1>MySongSearch</h1>
     </header>
-    <main>
-        <div>
-            <input 
-            type="text" 
-            id="search"
-            placeholder="search a song">
+    <div class="search">
+        <input 
+        type="text" 
+        id="search"
+        class="search-song"
+        placeholder="search song"
+        />
+    </div>
+    <div class="all-wrap">
+        <div class="single">
+            <h4>
+                Song Name
+            </h4>
+            <h4>
+                Artist
+            </h4>
+            <h4>
+                Show
+            </h4>
         </div>
-        <div id="results">
-        </div>
-    </main>
+        <ul id="results" class="result">
+        </ul>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/fold.js"></script>
+    <script>
+    </script>
+    <script src="data/dataaot.json"></script>
 </body>
-<script src="js/fold.js"></script>
-<script src="js/main.js"></script>
-<script src="data/data.json"></script>
 </html>
