@@ -1,20 +1,29 @@
+//input box id="search"
 const search = document.getElementById('search');
+//result div id="results"
 const results = document.getElementById('results');
 
+
+//function fetches data, takes an input, filters through data, finds matching data, turns matches into html readable string
+
+//fetching data
 const mySongSearch = async searchText => {
     const hold = await fetch("data/data.json");
     const data = await hold.json();
-
+    
+    //filters through data to find matches
     let matches = data.filter(elem => {
         const regex = new RegExp(`${searchText}`, 'gi')
         return elem.title.match(regex)
     })
 
+    //if input box is empty, empties out the results section
     if(searchText.length === 0){
         matches = []
         results.innerHTML = ''
     }
-
+    
+    //turns matches array into html readable string
     const goHTML = matches => {
         if(matches.length > 0){
             const correct = matches.map(elem => `
@@ -54,7 +63,10 @@ const mySongSearch = async searchText => {
             results.innerHTML = correct
         }
     }
+
+    //calls html conversion function
     goHTML(matches)
 }
 
+//upon every change in input, runs through the song searching function
 search.addEventListener('input', () => mySongSearch(search.value))
