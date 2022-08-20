@@ -1,0 +1,14 @@
+stuff to add
+
+Immediate fixes : 
+1. Home Page
+2. Quick Sort should give option of song, artist, or show
+3. Performance Issues, speeding up search process
+4. N/A links should be disabled
+5. Other Color toggle (purple/dark/light)
+
+Bigger Later Tasks :
+1. Advanced search
+2. Parsing for new data
+3. Personal Profile
+4. Top/New Songs page

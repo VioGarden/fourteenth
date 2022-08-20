@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap" rel="stylesheet">
+    <title>MySongSearch</title>
+</head>
+<body>
+    <header>
+        <h1>MySongSearch</h1>
+    </header>
+    <nav>
+        <a href="index-quick.html" id="search-quick" class="disabled-link">Quick</a>
+        <a href="index-filter.html" id="search-filter">Filter</a>
+    </nav>
+    <div class="search">
+        <input 
+        type="text" 
+        id="search"
+        class="search-song"
+        placeholder="search song"
+        />
+    </div>
+    <main>
+        <div class="single main-header">
+            <h4>
+                Song Name
+            </h4>
+            <h4>
+                Artist
+            </h4>
+            <h4>
+                Show
+            </h4>
+        </div>
+        <ul id="results" class="result">
+        </ul>
+    </main>
+    <script src="js/main-quick.js"></script>
+    <script src="js/fold-quick.js"></script>
+    <script>
+    </script>
+    <script src="data/data.json"></script>
+</body>
+</html>
