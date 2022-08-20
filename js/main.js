@@ -29,7 +29,7 @@ const mySongSearch = async searchText => {
             const correct = matches.map(elem => `
             <li class="content">
                 <div onclick=show(this)>
-                    <div class="single">
+                    <div class="single main-results">
                         <h4>
                             ${elem.title}
                         </h4>
