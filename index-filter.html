@@ -15,13 +15,36 @@
     <header>
         <h1>MySongSearch</h1>
     </header>
+    <nav>
+        <a href="index-quick.html" id="search-quick">Quick</a>
+        <a href="index-filter.html" id="search-filter" class="disabled-link">Filter</a>
+    </nav>
     <div class="search">
-        <input 
-        type="text" 
-        id="search"
-        class="search-song"
-        placeholder="search song"
-        />
+        <div class="search-bar">
+            <input 
+            type="text" 
+            id="search-song"
+            class="search-song"
+            placeholder="search song"
+            />
+            <input 
+            type="text" 
+            id="search-artist"
+            class="search-artist"
+            placeholder="search artist"
+            />
+            <input 
+            type="text" 
+            id="search-show"
+            class="search-show"
+            placeholder="search show"
+            />
+        </div>
+        <div class="search-button-box">
+            <button id="search" class="search-button">
+                Search
+            </button>
+        </div>
     </div>
     <main>
         <div class="single main-header">
@@ -38,10 +61,10 @@
         <ul id="results" class="result">
         </ul>
     </main>
-    <script src="js/main.js"></script>
-    <script src="js/fold.js"></script>
+    <script src="jsa/main-filter.js"></script>
+    <script src="jsa/fold-filter.js"></script>
     <script>
     </script>
-    <script src="data/dataaot.json"></script>
+    <script src="data/data.json"></script>
 </body>
 </html>
